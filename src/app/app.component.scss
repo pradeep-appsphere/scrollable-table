@@ -61,6 +61,7 @@ h1 {
     }
 
     // Width for each column
+    // If you want to add more column You need to add nth-child
     th:nth-child(1),
     td:nth-child(1) {
       width: 50px;
