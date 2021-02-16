@@ -1,0 +1,27 @@
+<h1>Scrollable table body and fixed header</h1>
+<div class="scrollable-table-conatainer">
+	<table>
+		<thead>
+			<tr>
+				<th>SN</th>
+				<th>Full Name</th>
+				<th>Email</th>
+				<th>Designation</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let item of items; let ind=index;">
+				<td>{{(ind+1)}}.</td>
+				<td>{{item.name}}</td>
+				<td>{{item.email}}</td>
+				<td>{{item.designation}}</td>
+				<td>
+					<a href="javascript:void(0)">Edit</a>
+					<span>&ensp;|&ensp;</span>
+					<a href="javascript:void(0)">Delete</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

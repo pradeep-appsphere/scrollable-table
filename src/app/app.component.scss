@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: #3a2bb9;
+  background-image: linear-gradient(45deg, #3a2bb9, #e6007f96);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-family: "Caveat", cursive;
+}
+
+// Copy this code for table only
+.scrollable-table-conatainer {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  border: 1px solid #ddd;
+  width: 100%;
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+
+    td,
+    th {
+      padding: 8px 10px;
+      word-break: break-all;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    thead {
+      display: table; /* to take the same width as tr */
+      width: calc(100% - 0px); /* - 0px because of the scrollbar width */
+      position: absolute;
+      top: 0;
+      left: 0;
+      th {
+        background: #f3f3f3;
+      }
+    }
+    tbody {
+      margin-top: 35px; /* gap same as thead height*/
+      display: block;
+      max-height: 200px; /* e.g. */
+      overflow-y: scroll;
+    }
+    tr {
+      display: table;
+      width: 100%;
+      box-sizing: border-box; /* because of the border (Chrome needs this line, but not FF) */
+    }
+
+    // Width for each column
+    th:nth-child(1),
+    td:nth-child(1) {
+      width: 50px;
+      min-width: 50px;
+      max-width: 50px;
+    }
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 200px;
+      min-width: 200px;
+      max-width: 200px;
+    }
+    th:nth-child(3),
+    td:nth-child(3) {
+      width: 220px;
+      min-width: 220px;
+      max-width: 220px;
+    }
+    th:nth-child(4),
+    td:nth-child(4) {
+      width: 150px;
+      min-width: 150px;
+      max-width: 150px;
+    }
+    th:nth-child(5),
+    td:nth-child(5) {
+      width: 100px;
+      min-width: 100px;
+      max-width: 100px;
+    }
+  }
+}
